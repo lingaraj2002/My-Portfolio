@@ -1,0 +1,278 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: 'Roboto', sans-serif;
+}
+#nav{
+	background-color: rgb(0, 0, 0);
+	position: sticky;
+	top: 0;
+}
+.nav-container{
+	width:100%;
+}
+.nav-row{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.nav-col-1{
+	width: 30%;
+	padding: 15px;
+}
+.nav-col-1 a{
+	text-decoration: none;
+	color: white;
+	background-color: rgb(1, 219, 219);
+	padding: 10px;
+	border-radius: 5px;
+	text-transform: capitalize;
+}
+.nav-col-2{
+	width: 50%;
+	padding: 15px;
+}
+.nav-col-3{
+	display: none;
+}
+.nav-ul li{
+	list-style: none;
+	display: inline;
+}
+.nav-a{
+	text-decoration: none;
+	font-size: 20px;;
+	color:#66fcf1;
+	text-transform: capitalize;	
+	padding:0 25px;
+}
+.nav-a:hover{
+	color:rgb(85, 85, 85)
+}
+
+#home-sec{
+	background:linear-gradient(#00000093,#000000a9), url("img/lingaraj-2.jpg");
+	background-position:50% 50%;
+	background-position:fixed;
+	background-size:cover;
+	color:#ffffff;
+	padding:93px 50px;
+	
+}
+.home-content{
+	padding:20px;
+	padding-top:100px;
+	text-transform:capitalize;
+}
+.home-content h1{
+	font-size:100px;
+	color: #66fcf1;
+	opacity: .8;
+}
+.home-content h2{
+	font-size:25px;
+	padding:10px;
+	color: #66fcf1;
+	opacity: .8;
+}
+.icon-row{
+	display:flex;
+	flex-direction:row;
+	gap:2%;
+	padding:10px 35px;
+	padding-bottom:50px;
+}
+.home-i{
+	padding:10px 15px;
+	background-color:#45a29e;
+	font-size:18px;
+	border-radius:5px;
+	color: #ffffff;
+	opacity: .8;
+}
+.home-i:hover{
+	box-shadow:0 0 6px 0 #7ad2f5;
+}
+.home-i a{
+	text-decoration:none;
+	color:#000000;
+}
+@media(min-width:320px){
+	.nav-ul{
+		position: fixed;
+		text-align: center;
+		width: 100%;
+		top: 50px;
+		right: -100%;
+		flex-direction: column;
+		background-color: #808080bf;
+		transition: 0.3s;
+		padding:5px 0 ;
+		z-index: 5;
+	}
+	.nav-ul li{
+		display: block;
+		padding: 13px 0;
+	}
+	.nav-ul.active{
+		right: 0;
+	}
+	.nav-col-3{
+		display: block;
+		color: white;
+		width:20%;
+		padding: 10px;
+	}
+	.nav-col-3 i{
+		padding: 8px;
+		font-size: 18px;
+		border: 1px solid white;
+		border-radius: 5px;
+	}
+	#home-sec{
+		padding: 180px 50px;
+	}
+	.home-content{
+		padding: 0;
+		padding-top: 80px;
+
+	}
+	.home-content h1{
+		font-size: 50px;
+		padding: 5px 0;
+	}
+	.home-content h2{
+		font-size:15px ;
+		padding: 0;
+	}
+	.icon-row{
+		padding:15px 0 ;
+		padding-bottom: 0;
+	}
+	.home-i{
+		font-size: 10px;
+		padding: 5px 8px;
+	}
+	.nav-col-1{
+		width: 40%;
+		padding: 15px;
+	}
+	.nav-row{
+		justify-content: space-between;
+	}
+	.nav-col-1 a{
+		padding: 7px;
+		font-size: 10px;
+	}
+	
+}
+
+@media(min-width:690px){
+	
+	.home-content h1{
+		font-size: 80px;
+		padding: 5px 0;
+	}
+	.home-content h2{
+		font-size:25px ;
+		padding: 0;
+	}
+	.icon-row{
+		padding:15px 0 ;
+		padding-bottom: 0;
+	}
+	.home-i{
+		font-size: 13px;
+		padding: 8px 12px;
+	}
+	.nav-col-1{
+		width: 30%;
+		padding: 20px;
+	}
+	.nav-row{
+		justify-content: space-between;
+	}
+	.nav-col-1 a{
+		padding: 10px;
+		font-size: 15px;
+	}
+	.nav-col-2{
+		width: 60%;
+		padding:20px 15px;
+	}
+	.nav-ul li{
+		list-style: none;
+		display: block;
+	}
+	.nav-a{
+		text-decoration: none;
+		font-size: 15px;;
+		color:#66fcf1;
+		text-transform: capitalize;	
+		padding:0 15px;
+	}
+	.nav-a:hover{
+		color:rgb(85, 85, 85)
+	}
+}
+@media(min-width:1020px){
+	.nav-col-2{
+		display: block;	
+	}
+	.nav-ul{
+		position: fixed;
+		width: 60%;
+		top:0;
+		background-color: #000000;
+		right: 0;
+		flex-direction: row;
+		transition: 0;
+		padding:20px 0 ;
+	}
+	.nav-ul li{
+		list-style: none;
+		display: inline;
+	}
+	.nav-col-3{
+		display: none;
+	}
+	.home-content{
+		padding-top: 100px;
+	}
+	.home-content h1{
+		font-size:90px;
+		padding: 0 30px;
+	}
+	.home-content h2{
+		font-size:25px;
+		padding:10px 35px;
+	}
+	.icon-row{
+		padding:10px 35px;
+		padding-bottom:70px;
+	}
+	.home-i{
+		padding:10px 15px;
+		font-size:18px;
+		border-radius:5px;
+	}
+	.nav-row{
+		justify-content: space-around;
+	}
+	.nav-col-1{
+		width: 30%;
+		padding: 25px;
+	}
+	.nav-col-1 a{
+		padding: 10px;
+	}
+	.nav-col-2{
+		width: 50%;
+		padding: 25px;
+	}
+	.nav-a{
+		font-size: 20px;;
+		padding:0 15px;
+	}
+}
